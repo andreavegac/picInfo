@@ -7,3 +7,9 @@ Dynamic routing to open the info of each image in a new page
 Create link as a custom component and use it in the footer
 
 Create a paginator
+
+Create image component and add the alt text for accesibility
+
+Create filter for images
+
+Create form. "false" login? 
