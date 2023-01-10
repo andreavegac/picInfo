@@ -5,11 +5,13 @@ import Footer from './components/Footer';
 import PhotoInformation from './components/PhotoInformation';
 import data from './data/picsum.json';
 import MainContainer from './components/MainContainer';
+import Button from './components/Button';
 
 function App() {
   return (
     <div className="App">
       <Header appName="PicInfo"></Header>
+      <Button></Button>
       <MainContainer>
       {
         data.map (content => (
