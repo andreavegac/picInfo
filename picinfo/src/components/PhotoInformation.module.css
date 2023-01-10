@@ -1,0 +1,11 @@
+.cardContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.photo{
+    border-radius: 15px;
+    height: auto;
+    width: 100%
+}
