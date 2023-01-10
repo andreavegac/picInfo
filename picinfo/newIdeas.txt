@@ -1,0 +1,9 @@
+Fetch for recovering the JSON instead of having it in local
+
+Create a form to obtain the images we want to, two fields (url and limit) + button
+
+Dynamic routing to open the info of each image in a new page
+
+Create link as a custom component and use it in the footer
+
+Create a paginator
