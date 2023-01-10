@@ -13,7 +13,8 @@ function App() {
       <MainContainer>
       {
         data.map (content => (
-          <PhotoInformation key={data.id} id={content.id} url={content.download_url} author={content.author} height={content.height} width={content.width}></PhotoInformation>
+          <PhotoInformation key={content.id} id={content.id} url={content.download_url} author={content.author} height={content.height} width={content.width}></PhotoInformation>
+          
         ))
       }
       </MainContainer>
