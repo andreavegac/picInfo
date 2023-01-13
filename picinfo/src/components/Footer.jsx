@@ -1,4 +1,5 @@
 import styles from './Footer.module.css'
+import Link from './Link';
 function Footer(){
     return <footer className={styles.footerComponent}>
         <div>
@@ -6,10 +7,11 @@ function Footer(){
         <p>Puedes:</p>
         <ul>
           <li>
-            <a href="mailto:andrea.vega629@comunidadunir.net">Enviarme un correo electrónico</a>
+            <Link text="Invitarme un correo electrónico" route="mailto:andrea.vega629@comunidadunir.net"></Link>
+
           </li>
           <li>
-            <a href="https://www.buymeacoffee.com/vegaandre">Invitarme a un cafetín</a>
+            <Link text="Invitarme a un cafetín" route="https://www.buymeacoffee.com/vegaandre"></Link>
           </li>
         </ul>
       </div>
