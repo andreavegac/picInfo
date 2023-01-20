@@ -1,4 +1,4 @@
-import styles from "./checkbox.module.css"
+import styles from "./Checkbox.module.css"
 import { useState } from "react";
 
 function Checkbox(props)  {
