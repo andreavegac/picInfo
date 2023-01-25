@@ -1,0 +1,16 @@
+.login-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.label-error{
+    font-size: 15px;
+    color: red;
+}
+
+.label-alert{
+    font-size: 15px;
+    color: red;
+}
