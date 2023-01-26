@@ -11,6 +11,9 @@ function Header(props) {
           <li>
             <Link to={`/login`}>Login</Link>
           </li>
+          <li>
+            <Link to={`/aboutUs`}>About us</Link>
+          </li>
         </ul>
       </nav>
       <div className={styles.overlay}>
