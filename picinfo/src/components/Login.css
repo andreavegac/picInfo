@@ -1,10 +1,34 @@
+form{
+    max-width: 500px;
+    margin: 0 auto;
+}
+.title-label{
+    padding: 0 10px;
+    color: #e300ff;
+    margin: 10px;
+}
 .login-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: #e0e064;
+    text-align: center;
+    border-radius: 7px;
+    position: absolute;
+    top: 27%;
 }
-
+.dvInput{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+input{
+    width: 100%;
+    padding: 5px;
+}
 .label-error{
     font-size: 15px;
     color: red;
@@ -13,4 +37,12 @@
 .label-alert{
     font-size: 15px;
     color: red;
+}
+button{
+    margin: 15px auto;
+    width: 80%;
+    background: #d864e0;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
 }

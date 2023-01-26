@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import '../login.css';
+import '../components/Login.css';
 import Title from '../components/Title';
 import Label from '../components/Label';
 import Input from '../components/Input';
@@ -61,44 +61,49 @@ const Login = () => {
 
     return (
         <>
-        <Header />
-        <div className="login-container">
-            <Title text = 'TITULO PRINCIPAL'/>
-            { hasError &&
-                <label className="laber-alert">
-                    Datos incorrectos
-                </label>
-            }
-            <Label text= 'USUARIO'/>
-            <Input
-            attribute={{
-                id: 'usuario',
-                name: 'usuario',
-                type: 'text',
-                planceholder: 'Ingrese su usuario'
-            }}
-            handleChange={handleChange}
-            />
-            <Label text= 'CONTRASEÑA'/>
-            <Input
-            attribute={{
-                id: 'contraseña',
-                name: 'contraseña',
-                type: 'password',
-                planceholder: 'Ingrese su contraseña'
-            }}
-            handleChange={handleChange}
-            param = {passwordError}
-            />
-            {passwordError &&
-                <label className="label-error">
-                    Contraseña invalida o incompleta
-                </label>
-            }
-            <button onClick={handleSubmit}>
-                 INGRESAR
-            </button>
-        </div>
+        <form action="/home" method="get">
+            <div className="login-container">
+                <Title text = 'Acceso a Picinfo'/>
+                { hasError &&
+                    <label className="laber-alert">
+                        Datos incorrectos
+                    </label>
+                }
+                <div class="dvInput">
+                    <Label text= 'USUARIO'/>
+                    <Input
+                    attribute={{
+                        id: 'usuario',
+                        name: 'usuario',
+                        type: 'text',
+                        planceholder: 'Ingrese su usuario'
+                    }}
+                    handleChange={handleChange}
+                    />
+                </div>
+                <div class="dvInput">
+                    <Label text= 'CONTRASEÑA'/>
+                    <Input
+                    attribute={{
+                        id: 'contraseña',
+                        name: 'contraseña',
+                        type: 'password',
+                        planceholder: 'Ingrese su contraseña'
+                    }}
+                    handleChange={handleChange}
+                    param = {passwordError}
+                    />
+                </div>
+                {passwordError &&
+                    <label className="label-error">
+                        Contraseña invalida o incompleta
+                    </label>
+                }
+                <button onClick={handleSubmit}>
+                    INGRESAR
+                </button>
+            </div>
+        </form>
         </>
     )
 };
