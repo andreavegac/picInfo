@@ -1,9 +1,11 @@
 import React, { useState } from "react";
-import './Login.css';
-import Title from './Title';
-import Label from './Label';
-import Input from './Input';
+import '../login.css';
+import Title from '../components/Title';
+import Label from '../components/Label';
+import Input from '../components/Input';
+import Header from "../components/Header";
 import { hasFormSubmit } from "@testing-library/user-event/dist/utils";
+import { Link } from "react-router-dom";
 
 const Login = () => {
 
@@ -58,6 +60,8 @@ const Login = () => {
     }
 
     return (
+        <>
+        <Header />
         <div className="login-container">
             <Title text = 'TITULO PRINCIPAL'/>
             { hasError &&
@@ -95,6 +99,7 @@ const Login = () => {
                  INGRESAR
             </button>
         </div>
+        </>
     )
 };
 
