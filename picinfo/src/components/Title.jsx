@@ -1,9 +1,12 @@
 import React from "react";
-import './Title.css';
+import styles from "./Title.module.css";
 
-const Title = ({text}) => {
+const Title = (props) => {
     return (
-        <h1 className="title-label"> {text} </h1>
+        <div class={styles.titleContainer}>
+        { props.icon != undefined ? <span className={styles.icon}>{props.icon}</span> : ""}
+        <h2 className={styles.title}> {props.children} </h2>
+        </div>
     )
 };
 

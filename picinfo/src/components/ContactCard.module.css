@@ -1,0 +1,25 @@
+.container{
+  display: flex;
+  gap: 1rem
+}
+
+.img{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 9999px;
+}
+
+.textContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.name{
+  font-size: 18px;
+}
+
+.description{
+  font-size: 14px;
+}

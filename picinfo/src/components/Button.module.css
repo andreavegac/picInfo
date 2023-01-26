@@ -1,3 +1,10 @@
-.customButton{
-  background-color: #e9e9e9;
+.customButton {
+  display: inline-flex;
+  width: max-content;
+  font-family: "Unbounded", cursive;
+  padding: 8px 12px;
+  border: 1px solid coral;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  color: coral;
 }

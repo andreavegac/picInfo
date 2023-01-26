@@ -2,17 +2,19 @@ import React from 'react'
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import MainContainer from '../components/MainContainer';
-import AboutMe from '../components/AboutMe';
 import { Link } from "react-router-dom";
+import Title from '../components/Title';
+import ContactCard from '../components/ContactCard'
 const AboutUs = () => (
     <div className="App">
       <Header appName="PicInfo"></Header>
       <MainContainer>
+      <Title>Conócenos</Title>
       <Link to="/">Go back</Link>
-        <AboutMe name="Lidia"></AboutMe>
-        <AboutMe name="Andrés"></AboutMe>
-        <AboutMe name="Jhonatan"></AboutMe>
-        <AboutMe name="Andrea"></AboutMe>
+        <ContactCard image={"https://loremflickr.com/320/240/random"} name="Lidia"></ContactCard>
+        <ContactCard image={"https://loremflickr.com/320/240/random"} name="Andrés"></ContactCard>
+        <ContactCard image={"https://loremflickr.com/320/240/random"} name="Jhonatan"></ContactCard>
+        <ContactCard image={"https://loremflickr.com/320/240/developer"} name="Andrea"></ContactCard>
       </MainContainer>
       <Footer />
     </div>

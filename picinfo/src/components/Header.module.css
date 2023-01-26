@@ -1,44 +1,55 @@
+
+
+
 .headerComponent{
-    background: url('http://www.autodatz.com/wp-content/uploads/2017/05/Old-Car-Wallpapers-Hd-36-with-Old-Car-Wallpapers-Hd.jpg');
-    text-align: center;
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    overflow: hidden;
-    border-radius: 0 0 85% 85% / 30%;
-}
-header .overlay{
-    width: 100%;
-    height: 100%;
-    padding: 50px;
-    color: #FFF;
-    text-shadow: 1px 1px 1px #333;
-    background-image: linear-gradient( 135deg, #9f05ff69 10%, #fd5e086b 100%);
+    backdrop-filter: blur(8px);
+    position: sticky;
+    top: 0;
+    padding: 16px 0;
+    background-color: rgba(255, 255, 255, 0.553);
+    z-index: 2;
 }
 
-h1 {
-    font-family: 'Dancing Script', cursive;
-    font-size: 60px;
-    margin-bottom: 30px;
+
+
+.headerComponent > * ul {
+    list-style: none;
 }
 
-h3, p {
-    font-family: 'Open Sans', sans-serif;
-    margin-bottom: 30px;
+.content{
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-button {
-    border: none;
-    outline: none;
-    padding: 10px 20px;
-    border-radius: 50px;
-    color: #333;
-    background: #fff;
-    margin-bottom: 50px;
-    box-shadow: 0 3px 20px 0 #0000003b;
+@media screen and (max-width: 868px){
+    .content{
+        margin: 0 24px;
+    }
 }
-button:hover{
-    cursor: pointer;
+
+.logoContainer{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.logo{
+    font-size: 32px;
+    font-family: 'Unbounded', cursive;
+    margin: 0;
+}
+
+
+.navLink{
+    font-family: 'Unbounded', cursive;
+    padding: 8px 12px;
+    background-color: coral;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    color: rgb(0, 0, 0);
 }
