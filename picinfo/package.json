@@ -1,6 +1,5 @@
 {
   "name": "picinfo",
-  "homepage": "https://andreavegac.github.io/picInfo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
