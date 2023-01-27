@@ -1,0 +1,18 @@
+.container {
+  margin: 0 auto;
+  max-width: 860px;
+  display: flex;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    margin: 0 48px;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  .container {
+    margin: 0 24px;
+    gap: 16px;
+  }
+}

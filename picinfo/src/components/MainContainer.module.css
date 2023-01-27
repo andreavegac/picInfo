@@ -1,15 +1,14 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  max-width: 800px;
   column-gap: 24px;
   row-gap: 32px;
-  margin: 48px auto;
+  margin: 48px 0;
 }
 
 @media screen and (max-width: 868px) {
   .container {
-    margin: 48px 24px;
+    margin: 48px 0;
     grid-template-columns: 1fr;
   }
 }

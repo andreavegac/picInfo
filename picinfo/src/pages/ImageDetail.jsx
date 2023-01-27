@@ -1,4 +1,4 @@
-import { useParams } from "react-router-dom";
+import { useParams, ScrollRestoration } from "react-router-dom";
 import data from "../data/picsum.json";
 import Header from "../components/Header";
 import Footer from "../components/Footer";

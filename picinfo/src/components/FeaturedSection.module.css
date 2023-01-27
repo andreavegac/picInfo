@@ -4,14 +4,14 @@
 }
 
 .container {
-  max-width: 800px;
   column-gap: 24px;
   row-gap: 32px;
-  margin: 48px auto;
+  margin: 48px 0;
   display: flex;
   flex-direction: column;
   gap: 32px;
   position: relative;
+  width: 100%;
 }
 
 .title {
@@ -39,7 +39,7 @@
 
 @media screen and (max-width: 900px) {
   .container {
-    margin: 48px 24px;
+    margin: 48px 0;
   }
 
   .backgroundText {

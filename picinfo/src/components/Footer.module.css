@@ -1,10 +1,8 @@
-.footerComponent > div {
+.content {
   display: flex;
   flex-direction: column;
-  max-width: 800px;
   column-gap: 24px;
   row-gap: 32px;
-  margin: 0 auto;
   padding: 48px 0;
 }
 
@@ -34,8 +32,7 @@
 }
 
 @media screen and (max-width: 900px) {
-  .footerComponent > div {
-    margin: 0 24px;
+  .content {
     padding: 48px 0;
     grid-template-columns: 1fr;
   }

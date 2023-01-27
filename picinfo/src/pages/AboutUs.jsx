@@ -8,8 +8,10 @@ import ContactForm from "../components/ContactForm";
 import Breadcrumbs from "../components/Breadcrumbs";
 import styles from "./AboutUs.module.css";
 
+
 const AboutUs = () => (
   <div className="App">
+
     <Header appName="PicInfo"></Header>
     <DetailContainer>
       <Breadcrumbs to="/" />

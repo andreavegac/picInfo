@@ -24,6 +24,11 @@
   text-decoration: none;
   border-radius: 0.5rem;
   color: rgb(0, 0, 0);
+  transition: background-color 250ms ease-in-out;
+}
+
+.inverse:hover {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .secondaryInverse {
@@ -36,6 +41,11 @@
   border-radius: 0.5rem;
   color: rgb(255, 255, 255);
   border: 1px solid white;
+  transition: background-color 250ms ease-in-out;
+}
+
+.secondaryInverse:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
 
 .primary {
