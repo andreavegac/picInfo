@@ -5,9 +5,16 @@
     gap: 16px;
     align-items: flex-start;
 }
-.title{
+.titleLarge{
     color: coral;
     font-size: 4rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.titleSmall{
+    color: coral;
+    font-size: 2rem;
     font-weight: 400;
     margin: 0;
 }

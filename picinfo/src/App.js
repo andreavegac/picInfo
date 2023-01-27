@@ -1,12 +1,9 @@
-import './App.css';
-import Home from './pages/Home';
-import Login from './pages/Login';
-import ImageDetail from './pages/ImageDetail';
-import AboutUs from './pages/AboutUs';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import "./App.css";
+import Home from "./pages/Home";
+import ImageDetail from "./pages/ImageDetail";
+import AboutUs from "./pages/AboutUs";
+import Thanks from "./pages/Thanks";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
@@ -18,19 +15,20 @@ const router = createBrowserRouter([
     element: <ImageDetail />,
   },
   {
-    path: "/AboutUs",
+    path: "/aboutus",
     element: <AboutUs />,
+  },
+  {
+    path: "/thanks",
+    element: <Thanks />,
   },
 ]);
 
-
 function App() {
   return (
-
-      <div className="App">
-        <RouterProvider router={router} />
-      </div>
-   
+    <div className="App">
+      <RouterProvider router={router} />
+    </div>
   );
 }
 

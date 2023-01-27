@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import data from "../data/picsum.json";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
@@ -6,6 +6,8 @@ import Button from "../components/Button";
 import DetailContainer from "../components/DetailContainer";
 import styles from "./ImageDetail.module.css";
 import Title from "../components/Title";
+import Breadcrumbs from "../components/Breadcrumbs";
+import AppContainer from "../components/AppContainer";
 
 const ImageDetail = () => {
   let image = useParams();
@@ -14,10 +16,17 @@ const ImageDetail = () => {
 
   return (
     <>
+    <AppContainer>
       <Header appName="PicInfo" />
       <DetailContainer>
-        <Link to="/">Go back</Link>
-        <Title>Photo detail {image.id}</Title>
+        <Breadcrumbs to="/" />
+        <div className={styles.actions}>
+          <Title>Photo detail {image.id}</Title>
+          <Button type="isLink" variant="secondary"
+            url={selectedImage.download_url}
+          >Abrir en nueva pestaña</Button>
+        </div>
+
         <div className={styles.content}>
           <img className={styles.photo} src={selectedImage.download_url}></img>
           <div className={styles.imageInfo}>
@@ -39,12 +48,9 @@ const ImageDetail = () => {
             </span>
           </div>
         </div>
-        <Button
-          text="Open in new tab"
-          url={selectedImage.download_url}
-        ></Button>
       </DetailContainer>
       <Footer />
+      </AppContainer>
     </>
   );
 };

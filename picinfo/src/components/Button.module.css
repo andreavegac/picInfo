@@ -1,4 +1,4 @@
-.customButton {
+.secondary {
   display: inline-flex;
   width: max-content;
   font-family: "Unbounded", cursive;
@@ -7,4 +7,56 @@
   text-decoration: none;
   border-radius: 0.5rem;
   color: coral;
+  background-color: transparent;
+  transition: background-color 250ms ease-in-out;
+}
+
+.secondary:hover{
+  background-color: rgba(253, 230, 221, 0.687);
+}
+
+.inverse {
+  display: inline-flex;
+  width: max-content;
+font-family: "Unbounded", cursive;
+padding: 8px 12px;
+background-color: rgb(255, 255, 255);
+text-decoration: none;
+border-radius: 0.5rem;
+color: rgb(0, 0, 0);
+}
+
+.secondaryInverse {
+  display: inline-flex;
+  width: max-content;
+font-family: "Unbounded", cursive;
+padding: 8px 12px;
+background-color: transparent;
+text-decoration: none;
+border-radius: 0.5rem;
+color: rgb(255, 255, 255);
+border: 1px solid white;
+}
+
+.primary{
+  display: inline-flex;
+  width: max-content;
+  font-family: 'Unbounded', cursive;
+  padding: 8px 12px;
+  background-color: coral;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  color: rgb(0, 0, 0);
+  transition: background-color 250ms ease-in-out;
+  border: none;
+  cursor: pointer;
+}
+.primary:not(:disabled):hover{
+  background-color: rgb(242, 107, 58);
+}
+
+
+
+.primary:disabled {
+opacity: 0.5;
 }

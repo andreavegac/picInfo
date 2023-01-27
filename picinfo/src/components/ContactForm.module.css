@@ -1,0 +1,9 @@
+.formContainer {
+  background-color: rgb(255, 207, 190);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid coral;
+  border-radius: 16px;
+  gap: 8px;
+}

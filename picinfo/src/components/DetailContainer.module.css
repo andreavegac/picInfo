@@ -5,6 +5,7 @@
   column-gap: 24px;
   row-gap: 32px;
   margin: 48px auto;
+  min-height: calc(100vh - 350px);
 }
 
 @media screen and (max-width: 868px) {

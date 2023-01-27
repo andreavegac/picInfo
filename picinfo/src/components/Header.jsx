@@ -1,5 +1,6 @@
 import styles from "./Header.module.css";
 import { Link } from "react-router-dom";
+import Button from "./Button";
 function Header(props) {
   return (
     <header className={styles.headerComponent}>
@@ -10,15 +11,10 @@ function Header(props) {
           </svg>
           <p className={styles.logo}>PicInfo</p>
         </Link>
-        <nav>
-          <ul>
-            <li>
-              <Link className={styles.navLink} to="/AboutUs">
-                Conócenos
-              </Link>
-            </li>
-          </ul>
-        </nav>
+
+        <Button type="isReactLink" variant="primary" to="/aboutus">
+          Conócenos
+        </Button>
       </div>
     </header>
   );
