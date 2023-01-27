@@ -1,4 +1,5 @@
 import styles from "./FeaturedSection.module.css";
+
 function FeaturedSection(props) {
   return (
     <div className={styles.featuredContainer}>

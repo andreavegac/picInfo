@@ -1,6 +1,5 @@
-
 .footerComponent > div {
-    display: flex;
+  display: flex;
   flex-direction: column;
   max-width: 800px;
   column-gap: 24px;
@@ -14,8 +13,8 @@
 }
 
 .buttonFooter {
-    display: inline-flex;
-    width: max-content;
+  display: inline-flex;
+  width: max-content;
   font-family: "Unbounded", cursive;
   padding: 8px 12px;
   background-color: rgb(255, 255, 255);
@@ -29,9 +28,9 @@
   color: white;
 }
 
-.buttonsContainer{
+.buttonsContainer {
   display: flex;
-  gap: 8px
+  gap: 8px;
 }
 
 @media screen and (max-width: 900px) {
@@ -40,9 +39,9 @@
     padding: 48px 0;
     grid-template-columns: 1fr;
   }
-  .buttonsContainer{
+  .buttonsContainer {
     display: flex;
     flex-direction: column;
-    gap: 8px
+    gap: 8px;
   }
 }

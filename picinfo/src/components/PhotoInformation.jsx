@@ -1,5 +1,4 @@
 import styles from "./PhotoInformation.module.css";
-import Button from "./Button";
 import { Link } from "react-router-dom";
 
 function PhotoInformation(props) {

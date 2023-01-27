@@ -1,6 +1,5 @@
-
-.appContainer{
-    display: flex;
-    flex-direction: column;
-    background-color: #fafafa;
+.appContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
 }

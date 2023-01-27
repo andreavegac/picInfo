@@ -1,5 +1,6 @@
 import styles from "./Footer.module.css";
 import Button from "./Button";
+
 function Footer() {
   return (
     <footer className={styles.footerComponent}>

@@ -1,10 +1,6 @@
-import { useParams, Link } from "react-router-dom";
-import data from "../data/picsum.json";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import Button from "../components/Button";
 import DetailContainer from "../components/DetailContainer";
-import styles from "./ImageDetail.module.css";
 import Title from "../components/Title";
 import Breadcrumbs from "../components/Breadcrumbs";
 
