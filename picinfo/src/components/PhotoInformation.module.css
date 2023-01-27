@@ -4,16 +4,28 @@
   gap: 4px;
 }
 
+.photoContainer {
+  aspect-ratio: 10/9;
+  overflow: hidden;
+  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.15));
+  border-radius: 15px;
+}
+
+.photoContainer:hover {
+  outline: 4px solid black;
+  outline-offset: 4px;
+}
+
 .photo {
+  aspect-ratio: 10/9;
   border-radius: 15px;
   height: auto;
   width: 100%;
-  filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.15));
-  aspect-ratio: 10/9;
   object-fit: cover;
+  transform: scale(1);
+  transition: transform 250ms ease-in-out;
 }
 
 .photo:hover {
-  outline: 4px solid black;
-  outline-offset: 4px;
+  transform: scale(1.05);
 }
