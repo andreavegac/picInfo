@@ -8,6 +8,7 @@ Trabajo grupal para la asignatura Desarrollo de Aplicaciones en Red 2022-2023.<b
 =>
 El grupo de trabajo es el número <b>3</b> y está formado por los siguientes integrantes:
 <ol>
+<li>Díaz Palacios, Jhonatan Xavier</li>
   <li>Gómez-Recuero Muñoz, Andrés</li>
   <li>Herrera García, Ana Lidia</li>
   <li>Vega Campos, Andrea</li>
