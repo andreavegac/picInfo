@@ -1,5 +1,3 @@
-import styles from "./Input.module.css";
-
 const Input = ({ attribute, handleChange, param }) => {
   return (
     <input

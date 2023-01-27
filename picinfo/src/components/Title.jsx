@@ -9,7 +9,12 @@ const Title = (props) => {
       ) : (
         ""
       )}
-      <h2 className={props.small === true ? styles.titleSmall : styles.titleLarge}> {props.children} </h2>
+      <h2
+        className={props.small === true ? styles.titleSmall : styles.titleLarge}
+      >
+        {" "}
+        {props.children}{" "}
+      </h2>
     </div>
   );
 };

@@ -11,37 +11,47 @@
   transition: background-color 250ms ease-in-out;
 }
 
-.secondary:hover{
+.secondary:hover {
   background-color: rgba(253, 230, 221, 0.687);
 }
 
 .inverse {
   display: inline-flex;
   width: max-content;
-font-family: "Unbounded", cursive;
-padding: 8px 12px;
-background-color: rgb(255, 255, 255);
-text-decoration: none;
-border-radius: 0.5rem;
-color: rgb(0, 0, 0);
+  font-family: "Unbounded", cursive;
+  padding: 8px 12px;
+  background-color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 0.5rem;
+  color: rgb(0, 0, 0);
+  transition: background-color 250ms ease-in-out;
+}
+
+.inverse:hover {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .secondaryInverse {
   display: inline-flex;
   width: max-content;
-font-family: "Unbounded", cursive;
-padding: 8px 12px;
-background-color: transparent;
-text-decoration: none;
-border-radius: 0.5rem;
-color: rgb(255, 255, 255);
-border: 1px solid white;
+  font-family: "Unbounded", cursive;
+  padding: 8px 12px;
+  background-color: transparent;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  color: rgb(255, 255, 255);
+  border: 1px solid white;
+  transition: background-color 250ms ease-in-out;
 }
 
-.primary{
+.secondaryInverse:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.primary {
   display: inline-flex;
   width: max-content;
-  font-family: 'Unbounded', cursive;
+  font-family: "Unbounded", cursive;
   padding: 8px 12px;
   background-color: coral;
   text-decoration: none;
@@ -51,12 +61,10 @@ border: 1px solid white;
   border: none;
   cursor: pointer;
 }
-.primary:not(:disabled):hover{
+.primary:not(:disabled):hover {
   background-color: rgb(242, 107, 58);
 }
 
-
-
 .primary:disabled {
-opacity: 0.5;
+  opacity: 0.5;
 }

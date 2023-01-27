@@ -1,56 +1,47 @@
-
-
-
-.headerComponent{
-    backdrop-filter: blur(8px);
-    position: sticky;
-    top: 0;
-    padding: 16px 0;
-    background-color: rgba(255, 255, 255, 0.553);
-    z-index: 2;
+.headerComponent {
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  padding: 16px 0;
+  background-color: rgba(255, 255, 255, 0.553);
+  z-index: 2;
 }
-
-
 
 .headerComponent > * ul {
-    list-style: none;
+  list-style: none;
 }
 
-.content{
-    margin: 0 auto;
-    max-width: 800px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
-@media screen and (max-width: 900px){
-    .content{
-        margin: 0 24px;
-    }
+.logo {
+  font-size: 32px;
+  font-family: "Unbounded", cursive;
+  margin: 0;
 }
 
-@media screen and (max-width: 515px){
-    .content{
-        margin: 0 24px;
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 16px;
-    }
+@media screen and (max-width: 900px) {
+  .logo {
+    font-size: 24px;
+  }
 }
 
-.logoContainer{
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    text-decoration: none;
-    color: rgb(0, 0, 0);
+@media screen and (max-width: 515px) {
+  .content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
 }
 
-.logo{
-    font-size: 32px;
-    font-family: 'Unbounded', cursive;
-    margin: 0;
+.logoContainer {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
-
-

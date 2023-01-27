@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate} from 'react-router-dom'
+import { useNavigate } from "react-router-dom";
 import styles from "./ContactForm.module.css";
 import Title from "./Title";
 import Label from "./Label";
@@ -38,13 +38,12 @@ const ContactForm = () => {
   }
 
   const navigate = useNavigate();
-  
-  const handleSubmit = event => {
+
+  const handleSubmit = (event) => {
     event.preventDefault();
 
-    navigate('/thanks');
+    navigate("/thanks");
   };
-   
 
   return (
     <>
@@ -72,7 +71,9 @@ const ContactForm = () => {
           handleChange={handleChangePassword}
           param={passwordError}
         />
-        <Button type="isButton" disabled={errorStatus}>Enviar</Button>
+        <Button type="isButton" disabled={errorStatus}>
+          Enviar
+        </Button>
       </form>
     </>
   );
