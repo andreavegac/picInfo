@@ -1,15 +1,48 @@
-.footerComponent{
-    font-size: 0.8rem;
-  color: #515050;
-  background-color: #e9e9e9;
-  padding: 4rem 0;
+
+.footerComponent > div {
+    display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  column-gap: 24px;
+  row-gap: 32px;
+  margin: 0 auto;
+  padding: 48px 0;
 }
 
-.footerComponent > div{
-    max-width: 700px;
-    margin: auto;
+.footerComponent ul {
+  list-style-type: none;
 }
 
-.footerComponent ul{
-    list-style-type: none;
+.buttonFooter {
+    display: inline-flex;
+    width: max-content;
+  font-family: "Unbounded", cursive;
+  padding: 8px 12px;
+  background-color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 0.5rem;
+  color: rgb(0, 0, 0);
+}
+
+.footerComponent {
+  background-color: black;
+  color: white;
+}
+
+.buttonsContainer{
+  display: flex;
+  gap: 8px
+}
+
+@media screen and (max-width: 900px) {
+  .footerComponent > div {
+    margin: 0 24px;
+    padding: 48px 0;
+    grid-template-columns: 1fr;
+  }
+  .buttonsContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 8px
+  }
 }

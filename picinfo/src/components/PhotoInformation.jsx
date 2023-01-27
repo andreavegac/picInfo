@@ -1,18 +1,15 @@
-import styles from './PhotoInformation.module.css';
-import Button from './Button';
-import Link from './Link';
+import styles from "./PhotoInformation.module.css";
+import Button from "./Button";
+import { Link } from "react-router-dom";
 
-function PhotoInformation(props){
-    return <div className={styles.cardContainer}>
-            <img className={styles.photo} src={props.url}></img>
-            <span><strong>ID:</strong>{props.id}</span>
-            <span><strong>Author:</strong>{props.author}</span>
-            <span><strong>Width:</strong>{props.width}</span>
-            <span><strong>Height:</strong>{props.height}</span>
-            <Link text="Click here to open the image in Lorem Picsum" route={props.url}></Link>
-            <Button text="Click me!!!!!"></Button>
-        </div>;
+function PhotoInformation(props) {
+  return (
+    <div className={styles.cardContainer}>
+      <Link to={`/detail/` + props.id} className={styles.link}>
+        <img className={styles.photo} src={props.url}></img>
+      </Link>
+    </div>
+  );
 }
-
 
 export default PhotoInformation;

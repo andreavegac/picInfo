@@ -1,0 +1,31 @@
+.container{
+  display: flex;
+  gap: 1rem;
+  padding: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.331);
+  border-radius: 16px;
+}
+
+.img{
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 9999px;
+}
+
+.textContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.name{
+  font-size: 18px;
+  color: coral;
+  font-weight: 800;
+}
+
+.description{
+  font-size: 14px;
+  color: #666666;
+}

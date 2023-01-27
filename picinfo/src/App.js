@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import PhotoInformation from './components/PhotoInformation';
-import data from './data/picsum.json';
-import MainContainer from './components/MainContainer';
+import "./App.css";
+import Home from "./pages/Home";
+import ImageDetail from "./pages/ImageDetail";
+import AboutUs from "./pages/AboutUs";
+import Thanks from "./pages/Thanks";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/detail/:id",
+    element: <ImageDetail />,
+  },
+  {
+    path: "/aboutus",
+    element: <AboutUs />,
+  },
+  {
+    path: "/thanks",
+    element: <Thanks />,
+  },
+]);
 
 function App() {
   return (
     <div className="App">
-      <Header appName="PicInfo"></Header>
-      <MainContainer>
-      {
-        data.map (content => (
-          <PhotoInformation key={content.id} id={content.id} url={content.download_url} author={content.author} height={content.height} width={content.width}></PhotoInformation>
-          
-        ))
-      }
-      </MainContainer>
-      <Footer></Footer>
+      <RouterProvider router={router} />
     </div>
   );
 }

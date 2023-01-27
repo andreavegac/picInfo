@@ -1,0 +1,30 @@
+
+.titleContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+}
+.titleLarge{
+    color: coral;
+    font-size: 4rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.titleSmall{
+    color: coral;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.icon > svg{
+    fill: coral;
+}
+
+@media screen and (max-width: 900px) {
+    .title{
+        font-size: 2rem;
+    }
+}
