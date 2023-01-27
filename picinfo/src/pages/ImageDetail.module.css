@@ -1,9 +1,30 @@
 .imageInfo {
   display: flex;
   flex-direction: column;
-  padding: 0 24px;
-  gap: 8px;
+  padding: 0 0 0 24px;
 }
+
+.imageInfo > span {
+  padding: 8px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  font-weight: 700;
+  border-bottom: 1px solid #999999;
+}
+
+.imageInfo > * strong {
+  display: inline-flex;
+  gap: 4px;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 9999px;
+  width: max-content;
+  font-weight: 600;
+  font-size: 14px;
+}
+
 
 .content {
   display: grid;
@@ -32,6 +53,11 @@
 
   .content {
     grid-template-columns: 1fr;
+  }
+
+  .imageInfo > span {
+    flex-direction: row;
+    align-items: center;
   }
 
   .imageInfo {
